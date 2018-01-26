@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <b> Welcome to a webpage about Corgis </b> <br>
+    <title>Corgi</title>
+  </head>
+  <body>
+    <!-- Body content goes here -->
+    <img src="http://placecorgi.com/260/180" alt = "Bike">
+  </body>
+</html>
