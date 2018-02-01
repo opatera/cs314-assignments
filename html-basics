@@ -2,11 +2,48 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <b> Welcome to a webpage about Corgis </b> <br>
-    <title>Corgi</title>
+    <title> Corgi </title>
   </head>
   <body>
     <!-- Body content goes here -->
-    <img src="http://placecorgi.com/260/180" alt = "Bike">
+    <header>
+      <h1> Welcome to a webpage of Corgis </h1>
+    </header>
+    <img src="http://placecorgi.com/260/180" alt = "Corgi">
+    <p>
+      This webpage is dedicated to posting images of Corgis so everyone can enjoy the photos.
+      This webpage will randomly grab photos from
+      <a href =  "placecorgi.com" > Place Corgi <a/>
+    </p>
+    <p>
+      Here are some interesting facts about Corgis:
+      <ol>
+        <li>There are two types of Corgis: The Pembroke and Cardigan</li>
+        <li>Corgis were originally used as herders</li>
+        <li>According to Welsh legend, fairies used to ride them</li>
+      </ol>
+    </p>
+    <table border = 1>
+      <thead>
+        <tr>
+          <th> Type of Corgi </th> <th> Docked Tail? </th>
+        </tr>
+      </thead>
+      <tfoot>
+        <td> Footer1 </td> <td> Footer2 </td>
+      </tfoot>
+      <tbody>
+        <tr>
+          <td> Pembroke </td> <td> Yes </td>
+        </tr>
+        <tr>
+          <td> Cardigan </td> <td> No </td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <footer>
+      Webpage written by Owen Patera for Assignment 1
+    </footer>
   </body>
 </html>
