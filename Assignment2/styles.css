@@ -6,6 +6,10 @@
   src: url("css/fonts/Roboto-Regular.svg");
 }
 
+html{
+  font-family: 'Roboto-Regular','Arial', 'sans-serif';
+}
+
 p{
   text-align: center;
 }
@@ -66,10 +70,10 @@ header{
 }
 
 .boxborder{
-  position: absolute;
+  position: relative;
   background: cyan;
   left: 45%;
-  top: 88%;
+  top: 25%;
   height: 50px;
   width: 150px;
   border-radius: 25px;
