@@ -153,7 +153,7 @@ p{
 	}
 }
 
-@media (max-width:768px) {
+@media (max-width:900px) {
   p{
     width: 100%;
   }
@@ -166,5 +166,14 @@ p{
   .threeboxes{
     transform: translate(0,0);
     width: 100%
+  }
+}
+
+@media (max-width:400px) {
+  header{
+    height: 350px;
+  }
+  .threeboxes{
+    height: 300px;
   }
 }
