@@ -1,0 +1,163 @@
+ @font-face {
+  font-family: "Roboto-Regular";
+  src: url("css/fonts/Roboto-Regular.eot") format("eot");
+  src: url("css/fonts/Roboto-Regular.woff") format("woff");
+  src: url("css/fonts/Roboto-Regular.woff2") format("woff2");
+  src: url("css/fonts/Roboto-Regular.svg") format("svg");
+}
+
+html{
+  font-family: 'Roboto-Regular','Arial', 'sans-serif';
+}
+
+i{
+  column-fill: white;
+  color: white;
+}
+
+.left{
+  font-size: 48px;
+  display: flex;
+  justify-content: flex-start;
+  transform: translate(0,-50%);
+}
+
+.allignRight{
+  text-align: right;
+  padding-top: 20px;
+  background-color: black;
+  width: 100%;
+  height: 50px;
+}
+
+.link{
+  padding: 10px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+.headContainer{
+ display: flex;
+ justify-content: center;
+}
+
+header {
+  text-align: center;
+  font-size: 46px;
+  padding-top: 40px;
+  background-color: grey;
+  width: 100%;
+  height: 300px;
+}
+
+p{
+  padding-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  font-size: 16px;
+}
+
+
+.boxborder{
+  margin: auto;
+  text-align: center;
+  width: 125px;
+  font-size: 16px;
+  border-style: solid;
+  top: 15%;
+  border-width: 2px;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  transform: translate(0,100%);
+}
+
+.boxborder h3{
+  line-height: 7px;
+  text-align: center;
+  font-family: 'Roboto-Regular','Arial', 'sans-serif';
+  font-size: 25px;
+  vertical-align: text-top;
+}
+
+.boxes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  color: white;
+}
+
+.threeboxes{
+  background-color: black;
+  width: 300px;
+  height: 250px;
+  text-align: center;
+  transform: translate(0,-25%);
+}
+
+.cloud{
+  font-size: 48px;
+}
+
+.lm{
+  margin: auto;
+  text-align: center;
+  width: 50px;
+  font-size: 16px;
+  border-color: white;
+  color: white;
+  border-style: solid;
+  top: 25%;
+  border-width: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.lm:hover{
+  animation-name: bounce;
+  animation-duration: 2s;
+  cursor: pointer;
+}
+
+.par{
+  padding-bottom: 15px;
+}
+
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-30px);
+		-ms-transform:     translateY(-30px);
+		transform:         translateY(-30px)
+	}
+	60% {
+		-webkit-transform: translateY(-15px);
+		-ms-transform:     translateY(-15px);
+		transform:         translateY(-15px)
+	}
+}
+
+@media (max-width:768px) {
+  p{
+    width: 100%;
+  }
+
+  .lm{
+    width: 25%;
+
+  }
+
+  .threeboxes{
+    transform: translate(0,0);
+    width: 100%
+  }
+}
