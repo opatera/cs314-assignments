@@ -1,0 +1,119 @@
+@font-face {
+ font-family: "mon";
+ src: url("css/fonts/Montserrat-Regular.eot") format("eot");
+ src: url("css/fonts/Montserrat-Regular.woff") format("woff");
+ src: url("css/fonts/Montserrat-Regular.woff2") format("woff2");
+ src: url("css/fonts/Montserrat-Regular.svg") format("svg");
+}
+
+html{
+ font-family: 'mon','Arial', 'sans-serif';
+}
+
+.headerbox{
+  background-color: #4169E1;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+
+.header1{
+  font-size: 42px;
+  padding: 10px;
+}
+
+h5{
+  font-size: 22px;
+  padding: 10px;
+}
+
+.forms{
+  max-width: 500px;
+  margin: auto;
+  display: block;
+}
+
+label{
+  display: block;
+  padding-top: 10px;
+}
+
+input, select, textarea{
+  width: 100%;
+  margin: 0 auto;
+  font-family: "mon";
+  border-radius: 5px;
+  border-color: #4169E1;
+  padding: 5px;
+}
+
+input:focus, select:focus, textarea:focus{
+  outline: none;
+}
+
+input::placeholder{
+  color: #4169E1;
+}
+
+textarea::placeholder{
+  color: #4169E1;
+}
+
+textarea{
+  height: 100px;
+  resize: none;
+}
+
+.radiocontainer{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.radiocontainer label{
+  display:inline;
+}
+
+.radiocontainer{
+  width: auto;
+}
+
+input[type = "submit"]{
+  width: auto;
+  padding: 10px 20px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.subbut:hover{
+  animation-name: bounce;
+  animation-duration: 2s;
+  cursor: pointer;
+}
+
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-30px);
+		-ms-transform:     translateY(-30px);
+		transform:         translateY(-30px)
+	}
+	60% {
+		-webkit-transform: translateY(-15px);
+		-ms-transform:     translateY(-15px);
+		transform:         translateY(-15px)
+	}
+}
+
+@media (max-width:767px) {
+    .forms{
+      max-width: 275px;
+    }
+
+  }

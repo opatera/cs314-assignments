@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel = "stylesheet" href = "reset.css">
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title> forms </title>
+  </head>
+  <body>
+    <!-- Body content goes here -->
+    <div class = "headerbox">
+      <header> <div class = "header1"> Welcome to my form page </div> </header>
+      <h5> Please fill out the forms </h5>
+    </div>
+    <div class = "forms">
+      <form>
+        <label>
+          First and last name
+          <input name = "name" placeholder="Please type your name">
+        </label>
+        <label>
+          Age
+          <input type = "number" name = "age" placeholder="Please enter your age">
+        </label>
+        <label>
+          Tell me a story
+          <textarea cols="20" rows="5" placeholder="Maybe a funny story?" maxlength="200"></textarea>
+        </label>
+        <label>
+          Sex
+          <select name = 'q'>
+            <option> Male </option>
+            <option> Female </option>
+          </select>
+        </label>
+        <div class = "radiocontainer">
+          <label>
+            Cat person
+            <input type = "radio" name = "radio" placeholder="Option1">
+          </label>
+          <label>
+            Dog person
+            <input type = "radio" name = "radio" placeholder="Option2">
+          </label>
+          <label>
+            No animals
+            <input type = "radio" name = "radio" placeholder="Option3">
+          </label>
+        </div>
+        <div class = "subbut">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
