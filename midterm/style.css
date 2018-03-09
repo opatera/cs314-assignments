@@ -1,0 +1,144 @@
+@font-face {
+ font-family: "san";
+ src: url("css/font/OpenSans-Regular.eot") format("eot");
+ src: url("css/font/OpenSans-Regular.woff") format("woff");
+ src: url("css/font/OpenSans-Regular.woff2") format("woff2");
+ src: url("css/font/OpenSans-Regular.svg") format("svg");
+}
+
+html{
+ font-family: 'san','Arial', 'sans-serif';
+}
+
+header{
+  width: 100%;
+  height: 700px;
+  background-size: cover;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("header1.PNG");
+}
+
+.allignCenter{
+  text-align: center;
+  padding-top: 20px;
+  background-color: white;
+  width: 100%;
+  height: 50px;
+}
+
+.link{
+  padding: 10px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.title{
+  text-align: center;
+  font-size: 64px;
+  color: white;
+  padding-top: 100px;
+  font-weight: bold;
+}
+
+.major{
+  text-align: center;
+  font-size: 22px;
+  color: white;
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+.biohead{
+  text-align: center;
+  font-size: 64px;
+  color: black;
+
+}
+
+.biodesc{
+  text-align: center;
+  font-size: 18px;
+  color: black;
+  padding-top: 15px;
+}
+
+.biodesc1{
+  text-align: center;
+  font-size: 18px;
+  color: black;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+
+.bio{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.bioimage{
+  /* width: 200px;
+  height: 200px;
+  background-size: 100%;
+  background-color: red;
+  background-image: url("c++.png"); */
+}
+
+.boxes{
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
+  color: black;
+}
+
+.threeboxes{
+  background-color: white;
+  width: 300px;
+  height: 350px;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.cloud{
+  display: flex;
+  justify-content: center;
+}
+
+.lm{
+  margin: auto;
+  text-align: center;
+  width: 50px;
+  font-size: 16px;
+  border-color: black;
+  color: black;
+  border-style: solid;
+  top: 25%;
+  border-width: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.par{
+  padding-bottom: 15px;
+}
+
+.par1{
+  padding-bottom: 15px;
+  white-space: pre;
+}
+
+a:hover{
+  color: #FFEBCD;
+}
+
+a{
+  transition: .5s;
+}
+
+footer{
+  width: 100%;
+  color: black;
+  padding-bottom: 15px;
+}
