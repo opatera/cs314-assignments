@@ -56,13 +56,37 @@ function Person(first, last, eyes) {
     this.firstName = first;
     this.lastName = last;
     this.eyeColor = eyes;
-    this.eye2 = ref(this.eye2, this.eyeColor);
+    this.eye2 = ref(this.eye2, this.eyeColor)
 }
 
 function ref(one, two){
   one = two;
   return one;
 }
+
+// function strings(one, two, three){
+//   let combine = "";
+//   if(three == null){
+//     combine = one + " " + two;
+//   }
+//   else{
+//     combine = one + " " + two + " " + three;
+//   }
+//   return combine;
+// }
+
+// var strings = function(one, two, three){
+//   let combine = "";
+//     if(three == null){
+//       combine = one + " " + two;
+//     }
+//     else{
+//       combine = one + " " + two + " " + three;
+//     }
+//     return combine;
+// }
+
+let strings = (a,b,c) => c==null? a+b : a+b+c;
 
 age();
 number();
@@ -75,3 +99,6 @@ console.log("Copy of original plus add key: ", copy1);
 
 let copy2 = copy(me);
 console.log("Copy of original:", copy2);
+
+console.log("Three Values: " + strings("one", "two", "three"));
+console.log("Two Values: " + strings("one", "two"));
