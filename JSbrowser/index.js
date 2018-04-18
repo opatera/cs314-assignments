@@ -1,3 +1,5 @@
+//browser-js
+
 "use strict";
 
 let counter = 0;
