@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel = "stylesheet" href = "reset.css">
+    <link rel = "stylesheet" href = "map.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 75%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 75%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class = "allignRight">
+     <span class = "link">
+       <a href = "index.html"> Home </a>
+     </span>
+     <span class = "link">
+       <a href = "form.html"> Contact </a>
+     </span>
+     <span class = "link">
+       <a href = "api.html"> API </a>
+     </span>
+   </div>
+   <div class = "center">
+     Where I Practice
+   </div>
+    <div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 47.132602, lng: -119.2148603},
+          zoom: 7
+        });
+        var RiverValley = {lat: 47.185115, lng: -122.215029};
+        var marker = new google.maps.Marker({
+        position: RiverValley,
+        map: map,
+        title: 'RiverValley'
+      });
+      var JoeAlbi = {lat: 47.711228, lng: -117.4805907};
+      var marker = new google.maps.Marker({
+      position: JoeAlbi,
+      map: map,
+      title: 'JoeAlbi BMX'
+    });
+    var McCollumn = {lat: 47.879124, lng: -122.221935};
+    var marker = new google.maps.Marker({
+    position: McCollumn,
+    map: map,
+    title: 'McCollumn BMX'
+  });
+      }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfA7QqQr5GphyzXkxr3fpRCrl5wKuwhEE&callback=initMap"
+    async defer></script>
+    <div class = "box">
+      RiverValley BMX is the main track I practice at because it is only
+      a few miles away from my house. This track is very fun and technical and
+      I get to ride with my friends here very often.
+    </div>
+    <div class = "box">
+      McCollumn BMX is another track that I practice at a lot because they host
+      a huge proam every year with a $20,000 pot. This proam is my favorite
+      race that I compete in every year.
+    </div>
+    <div class = "box">
+      JoeAlbi BMX is the main track I practice at in Spokane when I'm at school.
+      The track is under 10 minutes from Gonzaga's campus and has the largest ametuer
+      starting gate in the world. The city of Spokane provides a lot of funding to JoeAlbi
+      and because of this, JoeAlbi is a very nice facility.
+    </div>
+  </body>
+</html>
+</html>
